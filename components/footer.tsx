@@ -7,9 +7,9 @@ export default function Footer() {
   const [isPolicyOpen, setIsPolicyOpen] = useState(false)
 
   return (
-    <footer className="bg-black border-t border-white/10 py-16 md:py-20 px-6 md:px-12">
+    <footer className="bg-black border-t border-white/10 py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 md:gap-16">
           {/* Левая колонка - Бренд */}
           <div className="animate-fade-in-up">
             <div className="mb-6">
@@ -89,14 +89,14 @@ export default function Footer() {
           </div>
 
           {/* Правая колонка - Соцсети */}
-          <div className="animate-fade-in-up flex md:justify-end" style={{ animationDelay: "0.2s" }}>
-            <div className="flex gap-4">
+          <div className="animate-fade-in-up flex justify-center md:justify-end" style={{ animationDelay: "0.2s" }}>
+            <div className="flex gap-3 sm:gap-4">
               {/* Instagram */}
               <a
                 href="#"
                 onMouseEnter={() => setHoveredLink("instagram")}
                 onMouseLeave={() => setHoveredLink(null)}
-                className="w-10 h-10 rounded-full border flex items-center justify-center transition-elegant"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-elegant"
                 style={{
                   borderColor: hoveredLink === "instagram" ? "#DDCCAF" : "rgba(221, 204, 175, 0.3)",
                   backgroundColor: hoveredLink === "instagram" ? "rgba(221, 204, 175, 0.1)" : "transparent",
@@ -115,7 +115,7 @@ export default function Footer() {
                 href="mailto:blck.store.ltd@gmail.com"
                 onMouseEnter={() => setHoveredLink("email")}
                 onMouseLeave={() => setHoveredLink(null)}
-                className="w-10 h-10 rounded-full border flex items-center justify-center transition-elegant"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-elegant"
                 style={{
                   borderColor: hoveredLink === "email" ? "#DDCCAF" : "rgba(221, 204, 175, 0.3)",
                   backgroundColor: hoveredLink === "email" ? "rgba(221, 204, 175, 0.1)" : "transparent",
@@ -135,7 +135,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 onMouseEnter={() => setHoveredLink("telegram")}
                 onMouseLeave={() => setHoveredLink(null)}
-                className="w-10 h-10 rounded-full border flex items-center justify-center transition-elegant"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-elegant"
                 style={{
                   borderColor: hoveredLink === "telegram" ? "#DDCCAF" : "rgba(221, 204, 175, 0.3)",
                   backgroundColor: hoveredLink === "telegram" ? "rgba(221, 204, 175, 0.1)" : "transparent",
@@ -154,7 +154,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 onMouseEnter={() => setHoveredLink("youtube")}
                 onMouseLeave={() => setHoveredLink(null)}
-                className="w-10 h-10 rounded-full border flex items-center justify-center transition-elegant"
+                className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border flex items-center justify-center transition-elegant"
                 style={{
                   borderColor: hoveredLink === "youtube" ? "#DDCCAF" : "rgba(221, 204, 175, 0.3)",
                   backgroundColor: hoveredLink === "youtube" ? "rgba(221, 204, 175, 0.1)" : "transparent",

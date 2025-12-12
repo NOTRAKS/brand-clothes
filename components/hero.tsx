@@ -11,7 +11,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="min-h-screen flex items-center pt-8 md:pt-12 px-6 md:px-12 lg:px-16 bg-black relative overflow-hidden">
+    <section className="min-h-screen flex items-center pt-6 sm:pt-8 md:pt-12 px-4 sm:px-6 md:px-12 lg:px-16 bg-black relative overflow-hidden">
       <div className="absolute inset-0 opacity-3 pointer-events-none">
         <div className="absolute w-full h-px bg-white/20 top-1/4 left-0 animate-shimmer" />
         <div className="absolute w-px h-full bg-white/20 left-1/3 top-0" />
@@ -22,19 +22,19 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center justify-items-center lg:justify-items-start">
           <div className="mb-8 md:mb-12 w-full max-w-2xl">
             <h1
-              className={`text-2xl md:text-4xl font-black leading-none mb-6 md:mb-8 tracking-tighter ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}
+              className={`text-xl sm:text-2xl md:text-4xl font-black leading-tight sm:leading-none mb-4 sm:mb-6 md:mb-8 tracking-tighter ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}
               style={{ animationDelay: "0.2s", color: "#DDCCAF", letterSpacing: "0.05em" }}
             >
               BLCK - это больше, чем просто аксессуары.
             </h1>
 
             <div
-              className={`w-20 h-px my-8 md:my-12 ${isLoaded ? "animate-slide-in-left" : "opacity-0"}`}
+              className={`w-16 sm:w-20 h-px my-6 sm:my-8 md:my-12 ${isLoaded ? "animate-slide-in-left" : "opacity-0"}`}
               style={{ animationDelay: "0.3s", backgroundColor: "rgba(221, 204, 175, 0.4)" }}
             />
 
             <p
-              className={`text-xl md:text-2xl leading-relaxed max-w-lg mb-8 md:mb-12 font-medium ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}
+              className={`text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-lg mb-6 sm:mb-8 md:mb-12 font-medium ${isLoaded ? "animate-fade-in-up" : "opacity-0"}`}
               style={{ animationDelay: "0.4s", color: "rgba(221, 204, 175, 0.6)" }}
             >
               Это видение, которое вы транслируете в мир. Мы постоянно развиваемся и работаем над улучшением наших изделий, чтобы вы могли выбрать модель, которая идеально подойдет именно Вам.

@@ -13,23 +13,23 @@ export default function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50 bg-black/98 backdrop-blur-sm border-b border-white/5 animate-fade-in-up">
-      <div className="max-w-7xl mx-auto px-6 py-5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-5">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3 group">
+            <div className="flex items-center gap-2 sm:gap-3">
               <Image
                 src="/placeholder-logo.png"
                 alt="BLCK Logo"
-                width={60}
-                height={60}
-                className="transition-elegant group-hover:scale-110"
+                width={40}
+                height={40}
+                className="transition-elegant group-hover:scale-110 sm:w-[50px] sm:h-[50px] md:w-[60px] md:h-[60px]"
                 priority
               />
               <div
                 className="flex items-center justify-center transition-elegant group-hover:scale-110"
                 style={{
-                  width: "clamp(180px, 40vw, 300px)",
-                  height: "clamp(46px, 10vw, 77px)",
+                  width: "clamp(120px, 35vw, 300px)",
+                  height: "clamp(32px, 8vw, 77px)",
                   backgroundColor: "#DDCCAF",
                 }}
               >
@@ -38,7 +38,7 @@ export default function Header() {
                   style={{
                     color: "#000000",
                     fontFamily: '"Montserrat", sans-serif',
-                    fontSize: "clamp(28px, 6vw, 55px)",
+                    fontSize: "clamp(20px, 5vw, 55px)",
                     fontWeight: 800,
                     letterSpacing: "0.10px",
                   }}

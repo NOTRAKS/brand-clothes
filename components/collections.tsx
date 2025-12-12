@@ -34,16 +34,16 @@ export default function Collections() {
   ], [])
 
   return (
-    <section id="collections" className="py-16 sm:py-24 md:py-40 px-4 sm:px-6 md:px-12 bg-black border-t border-white/10">
+    <section id="collections" className="py-12 sm:py-16 md:py-24 lg:py-40 px-4 sm:px-6 md:px-12 bg-black border-t border-white/10">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-12 sm:mb-16 md:mb-24 animate-fade-in-up text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-6xl font-black leading-tight mx-auto px-4" style={{ color: "#DDCCAF" }}>
+        <div className="mb-8 sm:mb-12 md:mb-16 lg:mb-24 animate-fade-in-up text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-black leading-tight mx-auto px-2 sm:px-4" style={{ color: "#DDCCAF" }}>
             Четыре
             <br />
             <span style={{ color: "rgba(221, 204, 175, 0.3)" }}>направления</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
           {collections.map((collection, idx) => (
             <div
               key={collection.id}
