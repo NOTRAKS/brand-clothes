@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/icon-dark-32x32.png",
         media: "(prefers-color-scheme: light)",
       },
       {
@@ -41,11 +41,13 @@ export const metadata: Metadata = {
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/placeholder-logo.png",
+        type: "image/png",
+        sizes: "32x32",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/placeholder-logo.png",
+    shortcut: "/placeholder-logo.png",
   },
 }
 
@@ -58,6 +60,8 @@ export default function RootLayout({
     <html lang="ru" className="scroll-smooth">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+        <link rel="icon" href="/placeholder-logo.png" type="image/png" />
+        <link rel="shortcut icon" href="/placeholder-logo.png" />
       </head>
       <body className={`${inter.className} ${spaceMono.variable} ${montserrat.variable} bg-black text-white antialiased`}>
         {/* Yandex.Metrika counter */}
