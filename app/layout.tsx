@@ -26,24 +26,23 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
-  title: "BLCK - Men's Accessories",
-  description:
-    "Куратированная коллекция премиум аксессуаров: кожаные ремни, эксклюзивные кошельки, нишевые парфюмы и дизайнерские сумки",
+  title: "BLCK — Men's Accessories",
+  description: "BLCK — Men's Accessories",
   generator: "BLCK",
   icons: {
     icon: [
       {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
         url: "/placeholder-logo.png",
         type: "image/png",
         sizes: "32x32",
+      },
+      {
+        url: "/placeholder-logo.png",
+        media: "(prefers-color-scheme: light)",
+      },
+      {
+        url: "/placeholder-logo.png",
+        media: "(prefers-color-scheme: dark)",
       },
     ],
     apple: "/placeholder-logo.png",
